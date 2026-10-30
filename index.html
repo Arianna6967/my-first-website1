@@ -1,12 +1,8 @@
-
-<h1>Привіт! Це моя <span class="gradient-text"> персональна сторінка </span> </h1>
-<h1>Привіт! Це моя <span class="gradient-text"> персональна сторінка </span> </h1>
 <!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My GitHub Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -36,9 +32,9 @@
       </span>
 
       <h1>
-        Привіт!
+        Привіт! Це моя 
         <span class="gradient-text">
-          Мене звати Аріанна
+          персональна сторінка
         </span>
       </h1>
 
@@ -75,86 +71,7 @@
   </section>
 
   <div class="cards">
-<section class="git-panel" id="git">
 
-  <div class="section-heading">
-    <span class="git-symbol">⑂</span>
-    <h2>Результати роботи з Git</h2>
-  </div>
-
-  <p class="section-description">
-    Історія комітів, гілки та результати
-    виконання Git-команд.
-  </p>
-
-  <div class="git-tabs">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-status" checked>
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-branch">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-log">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-merge">
-
-    <div class="tab-labels">
-      <label for="tab-status">Git Status</label>
-      <label for="tab-branch">Git Branch</label>
-      <label for="tab-log">Git Log</label>
-      <label for="tab-merge">Merge History</label>
-    </div>
-
-    <div class="terminal">
-
-      <div class="terminal-header">
-        <div class="window-dots">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-        </div>
-
-        <span class="terminal-title">
-          git-terminal
-        </span>
-      </div>
-
-      <div class="terminal-body">
-
-        <pre class="tab-content status"><code>$ git status
-
-On branch main
-nothing to commit, working tree clean</code></pre>
-
-        <pre class="tab-content branch"><code>$ git branch -a
-
-* main
-  feature/about
-  remotes/origin/main
-  remotes/origin/feature/about</code></pre>
-
-        <pre class="tab-content log"><code>$ git log --oneline
-
-a1b2c3d Update main heading
-b2c3d4e Add initial website</code></pre>
-
-        <pre class="tab-content merge"><code>$ git log --merges
-
-commit a1b2c3d
-Merge branch 'feature/about'</code></pre>
-
-      </div>
-    </div>
-
-  </div>
-</section>
     <section class="glass-card" id="about">
       <div class="card-icon blue">●</div>
       <div>
@@ -163,6 +80,18 @@ Merge branch 'feature/about'</code></pre>
           Я навчаюся працювати
           з Git та GitHub.
         </p>
+      </div>
+    </section>
+
+    <section class="glass-card" id="hobbies">
+      <div class="card-icon pink">♥</div>
+      <div>
+        <h2>Мої захоплення</h2>
+        <ul class="hobbies-list">
+          <li>Програмування</li>
+          <li>Подорожі</li>
+          <li>Спорт</li>
+        </ul>
       </div>
     </section>
 
@@ -178,86 +107,79 @@ Merge branch 'feature/about'</code></pre>
 
   </div>
 
-<section class="git-panel" id="git">
-
-  <div class="section-heading">
-    <span class="git-symbol">⑂</span>
-    <h2>Результати роботи з Git</h2>
-  </div>
-
-  <p class="section-description">
-    Історія комітів, гілки та результати
-    виконання Git-команд.
-  </p>
-
-  <div class="git-tabs">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-status" checked>
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-branch">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-log">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-merge">
-
-    <div class="tab-labels">
-      <label for="tab-status">Git Status</label>
-      <label for="tab-branch">Git Branch</label>
-      <label for="tab-log">Git Log</label>
-      <label for="tab-merge">Merge History</label>
+  <!-- Секція результатів Git (без повторів, з твоїми реальними логами) -->
+  <section class="git-panel" id="git">
+    <div class="section-heading">
+      <span class="git-symbol">⑂</span>
+      <h2>Результати роботи з Git</h2>
     </div>
 
-    <div class="terminal">
+    <p class="section-description">
+      Історія комітів, гілки та результати
+      виконання Git-команд.
+    </p>
 
-      <div class="terminal-header">
-        <div class="window-dots">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
+    <div class="git-tabs">
+      <input type="radio" name="git-tab" id="tab-status" checked>
+      <input type="radio" name="git-tab" id="tab-branch">
+      <input type="radio" name="git-tab" id="tab-log">
+      <input type="radio" name="git-tab" id="tab-merge">
+
+      <div class="tab-labels">
+        <label for="tab-status">Git Status</label>
+        <label for="tab-branch">Git Branch</label>
+        <label for="tab-log">Git Log</label>
+        <label for="tab-merge">Merge History</label>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">git-terminal</span>
         </div>
 
-        <span class="terminal-title">
-          git-terminal
-        </span>
-      </div>
-
-      <div class="terminal-body">
-
-        <pre class="tab-content status"><code>$ git status
-
+        <div class="terminal-body">
+          <pre class="tab-content status"><code>$ git status
 On branch main
+Your branch is up to date with 'origin/main'.
+
 nothing to commit, working tree clean</code></pre>
 
-        <pre class="tab-content branch"><code>$ git branch -a
-
-* main
+          <pre class="tab-content branch"><code>$ git branch -a
   feature/about
-  remotes/origin/main
-  remotes/origin/feature/about</code></pre>
+- main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/feature/about
+  remotes/origin/main</code></pre>
 
-        <pre class="tab-content log"><code>$ git log --oneline
+          <pre class="tab-content log"><code>$ git log --oneline
+32e8fb9 Resolve merge conflict
+5a557e5 Change page heading
+750bcde Add Git results section
+b0855a6 update index.html
+5875e58 Resolve merge conflict
+2dc6fd5 Change page heading
+1051b0e Update main heading
+b131b37 Update hobbies list
+2cdc182 Add hobbies section
+88c9aaa Add style.css
+13fad65 Add initial website</code></pre>
 
-a1b2c3d Update main heading
-b2c3d4e Add initial website</code></pre>
+          <pre class="tab-content merge"><code>$ git log --merges
+commit 32e8fb9a70f81f873bbfa3b10cc38b96d57b7c07
+Merge: 5a557e5 750bcde
 
-        <pre class="tab-content merge"><code>$ git log --merges
-
-commit a1b2c3d
-Merge branch 'feature/about'</code></pre>
-
+commit 5875e587d549050e31926f9ba82896b4f8f7b10a
+Merge: 2dc6fd5 1051b0e</code></pre>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
   <footer class="footer">
     <p>Made with Git & GitHub Pages</p>
   </footer>
@@ -266,4 +188,3 @@ Merge branch 'feature/about'</code></pre>
 
 </body>
 </html>
-
